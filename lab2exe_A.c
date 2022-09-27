@@ -50,7 +50,7 @@ double degree_to_radian(double d) {
 }
 
 double Projectile_travel_distance(double a, double v) {
-    return (v * v / G) * sin(2 * degree_to_radian(a))
+    return (v * v / G) * sin(2 * degree_to_radian(a));
 }
 
 double Projectile_travel_time(double a, double v) {
