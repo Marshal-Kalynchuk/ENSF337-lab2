@@ -49,4 +49,8 @@ double degree_to_radian(double d) {
     return d * PI / 180;
 }
 
+double Projectile_travel_distance(double a, double v) {
+    return (v * v / G) * sin(2 * degree_to_radian(a))
+}
+
 /* UNCOMMENT THE CALL TO THE create_table IN THE main FUNCTION, AND COMPLETE THE PROGRAM */
