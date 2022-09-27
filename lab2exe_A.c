@@ -53,4 +53,8 @@ double Projectile_travel_distance(double a, double v) {
     return (v * v / G) * sin(2 * degree_to_radian(a))
 }
 
+double Projectile_travel_time(double a, double v) {
+    return (2 * v * sin(degree_to_radian(a))) / G;
+}
+
 /* UNCOMMENT THE CALL TO THE create_table IN THE main FUNCTION, AND COMPLETE THE PROGRAM */
