@@ -41,8 +41,12 @@ int main(void)
         }
     }
     
-    //  create_table(velocity);
+    create_table(velocity);
     return 0;
+}
+
+double degree_to_radian(double d) {
+    return d * PI / 180;
 }
 
 /* UNCOMMENT THE CALL TO THE create_table IN THE main FUNCTION, AND COMPLETE THE PROGRAM */
