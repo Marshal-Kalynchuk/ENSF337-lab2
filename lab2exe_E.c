@@ -45,4 +45,10 @@ int main(void)
   return 0;
 }
 
+void time_convert(int ms_time, int *minutes_ptr, double *seconds_ptr) {
+  *seconds_ptr = (ms_time / 1000.00);
+  *minutes_ptr = (int) (*seconds_ptr / 60);
+  *seconds_ptr -= *minutes_ptr * 60;
+}
+
 /* WRITE YOUR FUNCTION DEFINITION FOR time_convert HERE. */
