@@ -49,7 +49,7 @@ int main(void)
 void create_table(double v) {
     printf("| Angle |   Time    | Distance  |\n");
     printf("| (deg) |   (sec)   | (meters)  |\n");
-    for (int i = 0; i <= 90; i++) {
+    for (int i = 0; i <= 90; i+=5) {
         printf("|  %3d  |%10lf |%10lf |\n", i, Projectile_travel_time(i, v), Projectile_travel_distance(i, v));
     }
 }
