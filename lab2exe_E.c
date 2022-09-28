@@ -22,9 +22,9 @@ void time_convert(int ms_time, int *minutes_ptr, double *seconds_ptr);
 
 int main(void)
 {
-  int millisec;
-  int minutes;
-  double seconds;   
+  int millisec = 0;
+  int minutes = 0;
+  double seconds = 0;   
   int nscan;
 
   printf("Enter a time interval as an integer number of milliseconds: ");
@@ -38,6 +38,7 @@ int main(void)
   printf("Doing conversion for input of %d ms ... \n", millisec);
 
   /* MAKE A CALL TO time_convert HERE. */
+  time_convert(millisec, &minutes, &seconds);
 
   printf("That is equivalent to %d minute(s) and %f second(s).\n", minutes,
 	 seconds);
@@ -46,9 +47,14 @@ int main(void)
 }
 
 void time_convert(int ms_time, int *minutes_ptr, double *seconds_ptr) {
-  *seconds_ptr = (ms_time / 1000.00);
-  *minutes_ptr = (int) (*seconds_ptr / 60);
-  *seconds_ptr -= *minutes_ptr * 60;
+  if (ms_time >= 0){
+    *seconds_ptr = (ms_time / 1000.00);
+    *minutes_ptr = (int) (*seconds_ptr / 60);
+    *seconds_ptr -= *minutes_ptr * 60;
+  } else {
+    *seconds_ptr = 0;
+    *minutes_ptr = 0;
+  }
 }
 
 /* WRITE YOUR FUNCTION DEFINITION FOR time_convert HERE. */
