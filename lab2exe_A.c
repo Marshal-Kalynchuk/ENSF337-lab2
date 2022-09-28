@@ -45,9 +45,10 @@ int main(void)
     return 0;
 }
 void create_table(double v) {
-    printf("| Angle (deg) | Time (sec) | Distance (m) |");
+    printf("| Angle |   Time    | Distance  |\n");
+    printf("| (deg) |   (sec)   | (meters)  |\n");
     for (int i = 0; i <= 90; i++) {
-        printf("|%5d|%5lf|%5lf|", i, Projectile_travel_time(i, v), Projectile_travel_distance(i, v));
+        printf("|  %3d  |%10lf |%10lf |\n", i, Projectile_travel_time(i, v), Projectile_travel_distance(i, v));
     }
 }
 
