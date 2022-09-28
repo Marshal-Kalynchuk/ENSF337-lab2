@@ -1,7 +1,9 @@
 /*
- *
- * lab2exe_E.c
- * ENSF 337 - Lab 2 - Execise E
+ * File Name: lab2exe_E.c
+ * Assignment: Lab 2 Exercise E
+ * Lab section: B02
+ * Completed by: Marshal Kalynchuk
+ * Development Date: Sept 27, 2022
  */
 
 #include <stdio.h>

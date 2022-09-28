@@ -1,7 +1,9 @@
 /*
- *
- * lab2exe_D2.c
- * ENSF 337, Lab 2 - Execise D - PART 2
+ * File Name: lab2exe_D2.c
+ * Assignment: Lab 2 Exercise D2
+ * Lab section: B02
+ * Completed by: Marshal Kalynchuk
+ * Development Date: Sept 27, 2022
  */
 
 #include <stdio.h>

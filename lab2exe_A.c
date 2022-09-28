@@ -1,7 +1,9 @@
 /*
- *  lab2exe_A.c
- *  Created by Mahmood Moussavi
- *  Completed by: Student Name
+ * File Name: lab2exe_A.c
+ * Assignment: Lab 2 Exercise A
+ * Lab section: B02
+ * Completed by: Marshal Kalynchuk
+ * Development Date: Sept 27, 2022
  */
 
 #include <stdio.h>
